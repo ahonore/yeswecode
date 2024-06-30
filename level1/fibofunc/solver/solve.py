@@ -20,4 +20,6 @@ with open(flag_file, "r") as f:
 with open(fi_file, "r") as f:
     fi = f.read()
 
-assert check_solution(int(fi)) == int(flag)
+i = check_solution(int(fi))
+assert i == int(flag)
+print(i)
